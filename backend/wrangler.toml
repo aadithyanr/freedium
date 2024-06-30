@@ -2,7 +2,7 @@ name = "backend"
 compatibility_date = "2023-12-01"
 
 [vars]
-DATABASE_URL= "postgres://avnadmin:AVNS_3WSeBXIV091NSnAOdGP@pg-337036b7-nair-b111.f.aivencloud.com:20665/defaultdb?sslmode=require"
+DATABASE_URL= "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZDI4ZTkzMWUtNjliZi00NDcxLWIyNGUtZTQzNDBiZTUzMzYyIiwidGVuYW50X2lkIjoiYmQyYzY5ZjgzZjhlMGI3Y2JkZjgzM2U0OGQzZDRkZDZjZGNjM2M2MjhkOTQxYWVjYzU0ZGNiYzg2MmU2MWMwNCIsImludGVybmFsX3NlY3JldCI6IjM4ZDRjNWRhLTkxMWEtNGU0My1iMDY4LTM4ODNlYmQ5MTFkNSJ9.QPP0MsHotVfSwgsuY7moqE0iuKR-aOo1RiBxNEX8HKA"
 # MY_VAR = "my-variable"
 
 # [[kv_namespaces]]
