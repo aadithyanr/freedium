@@ -1,7 +1,8 @@
 name = "backend"
 compatibility_date = "2023-12-01"
 
-# [vars]
+[vars]
+DATABASE_URL= "postgres://avnadmin:AVNS_3WSeBXIV091NSnAOdGP@pg-337036b7-nair-b111.f.aivencloud.com:20665/defaultdb?sslmode=require"
 # MY_VAR = "my-variable"
 
 # [[kv_namespaces]]
