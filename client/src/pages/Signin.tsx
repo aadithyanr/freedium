@@ -1,7 +1,15 @@
-export default function Signin() {
+import { Auth } from "../components/Auth"
+import { Quote } from "../components/Quote"
+
+export default function Signup() {
     return(
-        <>
-        <h2>This is SignIn!</h2>
-        </>
+           <div className="grid grid-cols-2 lg: grid-cols-1">
+             <div>
+                <Auth type="signin" />
+             </div>
+             <div className="hidden lg:block">
+                <Quote />
+             </div>
+           </div>  
     )
 } 
