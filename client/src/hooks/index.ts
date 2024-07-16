@@ -11,7 +11,6 @@ export interface Blog {
     }
 }
 
-
 export const useBlog = ({ id }: { id: string }) => {
     const [loading, setLoading] = useState(true);
     const [blog, setBlog] = useState<Blog>();
@@ -26,7 +25,7 @@ export const useBlog = ({ id }: { id: string }) => {
                 setBlog(response.data.blog);
                 setLoading(false);
             })
-    }, [id]);
+}, [id]);
 
     return {
         loading, 
@@ -40,12 +39,13 @@ export const useBlogs = () => {
     const [blogs, setBlogs] = useState<Blog[]>([]);
 
     useEffect(() => {
-        axios.get(`${BACKEND_URL}/api/v1/blog/bulk`, {
+        axios.get(`${BACKEND_URL}/api/v1/blog/id`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }
         })
-            .then(response => {
+            .then(response =>  {
+                console.log(response)
                 setBlogs(response.data.blogs);
                 setLoading(false);
             })

@@ -5,22 +5,24 @@ import { FullBlog } from "../components/FullBlog";
 
 export const Blog = () => {
     const { id } = useParams();
-    const { loading, blog } = useBlogs(id || ""); // Pass id directly as an argument
+    const { loading, blogs } = useBlog({
+        id: id || ""
+    });
 
-    if(loading || !blog) {
+    if(loading || !blogs) {
         return <div>
             <AppBar />
             <div className="h-screen flex flex-col justify-center">
                 <div className="flex justify-center">
-                    Hold tight.
+                    Loading...
                 </div>
             </div>
         </div>
     }
 
-    return(
-        <FullBlog />
-    )
+    return <div>
+       <FullBlog blog={blogs} />
+    </div>
 }  
 
-export default Blog; // Add this line to explicitly export the Blog component
+export default Blog;
