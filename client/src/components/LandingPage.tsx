@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import backgroundImage from "../assets/4_SdjkdS98aKH76I8eD0_qjw.webp"
 
 export default function LandingPage() {
   return (
@@ -20,6 +21,9 @@ export default function LandingPage() {
               </Link>
             </div>
           </div>
+          <figure className="header__image">
+            <img src={backgroundImage} alt="" />
+          </figure>
         </div>
       </header>
     </section>
